@@ -1,0 +1,17 @@
+set nocompatible
+
+filetype plugin indent on
+
+syntax on
+
+set background=dark
+
+set nomodeline
+set wildmode=longest,list
+set shiftround
+set hlsearch highlight=l:Visual
+set ignorecase
+set smartcase
+set scrolloff=4
+
+nnoremap <silent> <C-L> <C-L>:nohlsearch<CR>
