@@ -3,3 +3,8 @@
     url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
     exact = true
     stripComponents = 1
+[".zsh/plugins/zsh-autosuggestions"]
+    type = "archive"
+    url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
