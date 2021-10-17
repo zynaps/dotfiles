@@ -1,10 +1,10 @@
-eval current_`alias ls`
-alias ls="LC_COLLATE=C $current_ls"
-unset current_ls
+alias sudo='sudo -E'
+
+alias ls='ls -v --color=auto'
+
+alias l='ls -la'
 
 alias bc='bc -l $HOME/.bcrc'
-alias sudo='sudo -E'
-alias l='ls -la'
 
 alias rm='rm -i'
 alias cp='cp -i'
