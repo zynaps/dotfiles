@@ -5,3 +5,7 @@ unset current_ls
 alias bc='bc -l $HOME/.bcrc'
 alias sudo='sudo -E'
 alias l='ls -la'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
