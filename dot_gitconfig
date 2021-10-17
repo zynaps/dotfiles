@@ -1,8 +1,6 @@
 [user]
 	name = Igor Vinokurov
 	email = zynaps@zynaps.ru
-[alias]
-	reword = commit --amend
 [color]
 	ui = auto
 [core]
