@@ -1,9 +1,12 @@
-[color]
-	ui = auto
 [core]
-	pager = less --quit-if-one-screen --no-init
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
+    pager = less --quit-if-one-screen --no-init
+
 [push]
-	default = simple
+    default = simple
+
+[color]
+    ui = auto
+
 [include]
-	path = ~/.gitconfig_local
+    path = ~/.gitconfig_local
