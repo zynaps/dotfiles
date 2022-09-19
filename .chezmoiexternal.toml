@@ -10,4 +10,4 @@
     stripComponents = 1
 [".gitignore"]
     type = "file"
-    url = "https://www.toptal.com/developers/gitignore/api/linux,macos,vim"
+    url = "https://www.toptal.com/developers/gitignore/api/linux,macos,vim,python"
