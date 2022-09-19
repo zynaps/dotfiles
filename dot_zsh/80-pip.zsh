@@ -1,3 +1,3 @@
-if which pip &> /dev/null; then
-    export PATH=$(python -m site --user-base)"/bin":${PATH}
+if which pip3 &> /dev/null; then
+    export PATH=$(python3 -m site --user-base)"/bin":${PATH}
 fi
