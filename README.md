@@ -25,6 +25,6 @@ $ chezmoi update --refresh-externals
 or:
 
 ```console
-$ chezmoi git pull -- --rebase && chezmoi diff
+$ chezmoi git pull -- --rebase && chezmoi diff [--exclude=externals]
 $ chezmoi apply --refresh-externals
 ```
