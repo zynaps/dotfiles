@@ -1,0 +1,8 @@
+[hostname]
+ssh_symbol = ""
+
+[ruby]
+disabled = true
+
+[status]
+disabled = false
