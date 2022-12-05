@@ -2,6 +2,9 @@
     excludesfile = ~/.gitignore
     pager = less --quit-if-one-screen --no-init
 
+[init]
+    defaultbranch = master
+
 [pull]
     rebase = true
 
