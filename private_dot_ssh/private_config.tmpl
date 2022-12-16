@@ -1,0 +1,21 @@
+Include ~/.ssh/config_local
+
+Host *
+{{- if (eq .chezmoi.os "darwin") }}
+    UseKeychain yes
+{{- end }}
+    AddKeysToAgent yes
+    StrictHostKeyChecking accept-new
+    HashKnownHosts no
+    PreferredAuthentications publickey,password
+    Compression yes
+    AddressFamily inet
+    TCPKeepAlive no
+    ServerAliveInterval 16
+    ServerAliveCountMax 16
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%C
+    ControlPersist 1m
+    CanonicalizeHostname yes
+    CanonicalizeMaxDots 0
+    CanonicalizeFallbackLocal no
