@@ -6,7 +6,7 @@ fi
 if which brew &> /dev/null; then
     HOMEBREW_PREFIX="$(brew --prefix)/opt"
 
-    for GNU_PACKAGE in grep findutils gawk gnu-{sed,tar,time,which} coreutils; do
+    for GNU_PACKAGE in grep diffutils findutils gawk gnu-{sed,tar,time,which} coreutils; do
         if [ -d "${HOMEBREW_PREFIX}/${GNU_PACKAGE}/libexec/gnubin" ]; then
             GNU_PATH="${HOMEBREW_PREFIX}/${GNU_PACKAGE}/libexec/gnubin":${GNU_PATH}
             GNU_MANPATH="${HOMEBREW_PREFIX}/${GNU_PACKAGE}/libexec/gnuman":${GNU_MANPATH}

@@ -4,6 +4,8 @@ alias ls='ls -v --color=auto'
 
 alias l='ls -la'
 
+alias diff='diff --color=auto'
+
 alias bc='bc -l ${HOME}/.bcrc'
 
 alias rm='rm -i'
