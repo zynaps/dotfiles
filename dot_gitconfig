@@ -15,5 +15,8 @@
 [color]
     ui = auto
 
+[alias]
+    unpushed = log origin/master..HEAD --oneline --no-decorate
+
 [include]
     path = ~/.gitconfig_local
