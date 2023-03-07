@@ -1,5 +1,5 @@
-if [ -d /usr/local/opt/ruby/ ]; then
-    export PATH="/usr/local/opt/ruby/bin:${PATH}"
+if [ -d /opt/homebrew/opt/ruby/ ]; then
+    export PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
 fi
 
 if which ruby &> /dev/null; then
