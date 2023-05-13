@@ -79,6 +79,7 @@ plugins=(
     bundler
     docker
     git
+    terraform
     zsh-autosuggestions
     zsh-z
 )
