@@ -6,6 +6,8 @@ alias l='ls -la'
 
 alias diff='diff --color=auto'
 
+alias j='z'
+
 alias bc='bc -l ${HOME}/.bcrc'
 
 alias rm='rm -i'
