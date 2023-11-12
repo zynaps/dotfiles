@@ -65,6 +65,17 @@ DISABLE_LS_COLORS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=${HOME}/.zsh
 
+# Specify path to Homebrew binaries separately
+if [[ ${OSTYPE} = darwin* ]]; then
+    if [[ -d /opt/homebrew/bin ]]; then
+        export PATH=/opt/homebrew/bin:${PATH}
+    fi
+
+    if [[ -d /opt/homebrew/sbin ]]; then
+        export PATH=/opt/homebrew/sbin:${PATH}
+    fi
+fi
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
