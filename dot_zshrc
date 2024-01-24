@@ -90,6 +90,9 @@ plugins=(
     zsh-z
 )
 
+# Uncomment the following line to skip the verification of insecure directories
+ZSH_DISABLE_COMPFIX="true"
+
 source ${ZSH}/oh-my-zsh.sh
 
 # User configuration
