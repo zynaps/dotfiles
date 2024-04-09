@@ -20,7 +20,7 @@
     l = log --oneline --no-decorate
     last = log -1 HEAD --no-decorate --stat --patch
     new = diff HEAD
-    recent = log --pretty=format:'%C(cyan)%cd %C(auto)%h %s' --date=format:%d.%m -15
+    recent = log --pretty=format:'%C(cyan)%cd %C(auto)%h %s' --date='format:%d.%m.%y' -15
     st = status
     staged = diff --staged HEAD
     undo = reset --soft HEAD~1
