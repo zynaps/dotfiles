@@ -1,2 +1,6 @@
-export HISTSIZE=1048576
-export SAVEHIST=1047552
+export HISTSIZE=100000000
+export SAVEHIST=100000000
+
+setopt nohistfindnodups
+setopt nohistexpiredupsfirst
+setopt nohistignoredups
