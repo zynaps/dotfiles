@@ -15,16 +15,23 @@
 [color]
     ui = auto
 
+[pretty]
+    custom = format:%C(cyan)%cd %C(yellow)%h %C(reset)%s
+
+[log]
+    date = format:%d.%m.%y
+
 [alias]
+    aliases = !git config --get-regexp \"^alias\\.\" | sed \"s/^alias\\.//\"
     fix = commit --amend --no-edit
-    l = log --oneline --no-decorate
-    last = log -1 HEAD --no-decorate --stat --patch
+    l = log --pretty=custom --no-decorate
+    last = log -1 HEAD --pretty=custom --no-decorate --stat --patch
     new = diff HEAD
-    recent = log --pretty=format:'%C(cyan)%cd %C(auto)%h %s' --date='format:%d.%m.%y' -15
+    recent = log --pretty=custom -15
     st = status
     staged = diff --staged HEAD
-    undo = reset --soft HEAD~1
-    unpushed = log origin/master..HEAD --pretty=format:'%C(cyan)%cd %C(auto)%h %s' --date='format:%d.%m.%y'
+    undo = reset --soft HEAD^
+    unpushed = log origin/master..HEAD --pretty=custom
     unstage = restore --staged
 
 [include]
